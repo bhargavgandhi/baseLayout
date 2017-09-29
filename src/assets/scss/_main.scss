@@ -1,0 +1,572 @@
+/* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: main.scss
+     =========================== */
+.center-inner {
+  width: 100%;
+  height: auto;
+  margin-left: -50%;
+  text-align: center;
+  max-width: 100%;
+  // position: absolute;
+  // left: 50%;
+  // top: 50%;
+  // transform: translate3d(-50%, -50%, 0);
+}
+
+.btn {
+  clear: both;
+  display: block;
+  font-family: $fontStack;
+  font-size: 14px;
+  font-size: 0.875em;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #000000;
+  padding: 1.4em;
+  background: transparent;
+  border: 1px solid #c09260;
+  background: transparent;
+  margin-right: 3em;
+  float: none !important;
+  outline: none;
+  max-width: 220px;
+  max-width: 16em;
+  margin: 10px auto 0;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 0 !important;
+}
+
+.bx-controls,
+.bx-wrapper .bx-viewport {
+  font-size: 16px;
+}
+
+.bx-wrapper .bx-caption span,
+.bx-wrapper .bx-pager {
+  display: block;
+  padding: 10px 0;
+  font-family: $fontStack;
+  font-size: 15px;
+  font-size: 0.94em;
+  font-weight: 500;
+  line-height: 1.47;
+  letter-spacing: 0.3px;
+  color: #333333;
+}
+//Image Animations
+
+.imgAnims {
+  position: relative;
+}
+
+.bLeft,
+.bRight {
+  animation-delay: 0.1s;
+  max-width: 100%;
+}
+
+img {
+  display: block;
+}
+
+.bLeft {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bRight {
+  width: 45%;
+}
+
+.bCenter {
+  background: #f1f1f1;
+  text-align: center;
+  width: 165px;
+  height: 165px;
+  // width: 10.32em;
+  // height: 10.32em;
+  width: 14.53%;
+  height: 27.5%;
+  position: absolute;
+  z-index: 999;
+  right: 43.7%;
+  transform: translate3d(59.05%, -100%, 0);
+  // transform: translate3d(6.015em, -10.5em, 0);
+  animation-delay: 0.7s;
+
+  p {
+    margin: 50% auto 0;
+    transform: translate3d(0,-50%,0);
+    font-family: $ManifoldCF-Bold;
+    font-size: 19px;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1.7px;
+    line-height: 1.2;
+    text-align: center;
+    color: #333333;
+    max-width: 4.7em;
+  }
+}
+
+.mainCopy {
+  p {
+    text-align: left;
+    font-family: $fontStack;
+    font-size: 24px;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.42;
+    letter-spacing: 0.5px;
+    color: #333333;
+    max-width: 37.5em;
+  }
+}
+
+.bSubHeading {
+  h2 {
+    font-family: $ManifoldCF-Bold;
+    font-size: 32px;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 2.6px;
+    text-align: center;
+    color: #333333;
+    line-height: 1.4;
+  }
+
+  span.slash {
+    font-family: inherit;
+    display: block;
+    line-height: 1.2;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+  }
+}
+
+.bSubHeading2 {
+  vertical-align: top;
+
+  h3 {
+    font-family: $fontStack;
+    font-size: 15px;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.47;
+    letter-spacing: 0.3px;
+    color: #333333;
+    position: relative;
+
+    &:after {
+      content: "";
+      border-top: 1px solid #333;
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: 0;
+      width: 9.85em;
+    }
+  }
+}
+
+.bSubPara2 {
+  vertical-align: top;
+
+  p {
+    font-family: $fontStack;
+    font-size: 15px;
+    font-size: 0.94em;
+    font-weight: 500;
+    line-height: 1.47;
+    letter-spacing: 0.3px;
+    color: #333333;
+    margin: 0;
+  }
+}
+
+#homeHero {
+  .bRight {}
+}
+
+#homeRow3 {
+  background: rgba(150,150,150,0.8);
+
+  .bSubHeading {
+    margin: 5% auto;
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .bLeft,
+  .bRight,
+  .bText {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .bRight {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .bText {
+    width: 156px;
+    width: 13.8%;
+    // width: 9.8em;
+    h3 {
+      font-family: $fontStack;
+      font-size: 15px;
+      font-size: 0.94em;
+      font-weight: 500;
+      line-height: 1.47;
+      color: #333333;
+      max-width: 9.35em;
+    }
+
+    hr {
+      border-color: #000;
+      margin: 5px 0 10px;
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
+        font-family: $fontStack;
+        font-size: 15px;
+        font-size: 0.94em;
+        font-weight: 500;
+        line-height: 1.47;
+        letter-spacing: 0.3px;
+        color: #333333;
+
+        &:before {
+          content: "- ";
+        }
+      }
+    }
+  }
+}
+
+#homeRow4 {
+  .bSubHeading {
+    margin: 5em 5em 5em -5em;
+
+    h2 {
+      max-width: 10.5em;
+    }
+  }
+
+  .bLeft,
+  .bRight,
+  .bText {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .bLeft {
+    width: 40%;
+    margin-right: 5%;
+    margin-top: -5%;
+  }
+
+  .bRight {
+    width: 50%;
+  }
+
+  .bx-wrapper .bx-viewport {
+    left: 0;
+  }
+
+  .bx-wrapper .bx-controls-direction a {
+    bottom: 18px;
+    bottom: 1.1em;
+  }
+
+  .bx-wrapper .bx-prev {
+    right: 8%;
+  }
+
+  .bx-wrapper .bx-next {
+    bottom: 18px !important;
+    bottom: 1.1em !important;
+  }
+
+  .bx-wrapper .bx-controls-auto,
+  .bx-wrapper .bx-pager {
+    max-width: 102px;
+    bottom: 2px;
+    bottom: 0.2em;
+  }
+
+  .bx-wrapper .bx-caption span {
+    padding: 10px 40px;
+  }
+}
+
+#homeRow5 {
+  .dummyItems {
+    margin-top: 5%;
+    margin-right: 5%;
+  }
+  h2.bSubHead {
+    font-family: $fontStack;
+    font-size: 15px;
+    font-size: 0.94em;
+    font-weight: 500;
+    line-height: 1.47;
+    letter-spacing: 0.3px;
+    color: #333333;
+    position: relative;
+  }
+
+  .bInfoHeading {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h3 {
+    margin-top: 1em;
+    font-family: $fontStack;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.38;
+    letter-spacing: 0.5px;
+    color: #333333;
+    text-align: center;
+  }
+}
+
+
+#homeMap {
+  .mainMap,
+  .mapLists {
+    vertical-align: top;
+  }
+
+  .mainMap {
+    float: right !important;
+  }
+
+  .mapLists {
+    h2,
+    h3,
+    ol li {
+      font-family: $fontStack;
+      font-size: 12px;
+      font-size: 0.75em;
+      font-weight: 500;
+      line-height: 1.42;
+      color: #333333;
+    }
+
+    h2,
+    h3 {
+      border-bottom: 1px solid #000;
+    }
+
+    h3 {
+      margin: 20px auto;
+      position: relative;
+
+      &:after {
+        content: "+";
+        position: absolute;
+        right: 0;
+        top: -10px;
+        font-size: 25px;
+      }
+    }
+
+    ol {
+      li {
+        line-height: 1.92;
+      }
+    }
+  }
+}
+
+#homeRow6 {
+  .bSubHeading2 {
+    margin: 0 auto 5%;
+
+    h3 {
+      font-family: $fontStack;
+      font-size: 15px;
+      font-size: 0.94em;
+      font-weight: 500;
+      line-height: 1.47;
+      letter-spacing: 0.3px;
+      color: #333333;
+    }
+
+    p {
+      margin-top: 2.5em;
+      font-family: $fontStack;
+      font-size: 15px;
+      font-size: 0.94em;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.47;
+      letter-spacing: 0.3px;
+      color: #333333;
+    }
+  }
+
+  .bLeft,
+  .bRight,
+  .bText {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .bLeft {
+    width: 40%;
+    margin-right: 5%;
+  }
+
+  .bRight {
+    width:50%;
+  }
+}
+
+#homeRow7 {
+  background: rgba(200,200,200,0.8);
+
+  .bSubHeading2 {
+    h3 {
+    }
+  }
+
+  .bSubHeading {
+    margin-right: -4px;
+
+    h2 {
+      text-align: left;
+      line-height: 1.09;
+      letter-spacing: 2.2px;
+    }
+    h3 {
+      text-align: left;
+      line-height: 1.09;
+      letter-spacing: 2.2px;
+      font-size: 1em;
+    }
+
+    h4 {
+      max-width: 11em;
+      font-family: $fontStack;
+      font-size: 24px;
+      font-size: 1.2em;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.38;
+      letter-spacing: 0.5px;
+      color: #333333;
+    }
+
+    hr {
+      border-color: #000;
+      max-width: 15em;
+    }
+  }
+}
+
+
+#footNavNext {
+  text-align: right;
+
+  img {
+    display: inline-block;
+  }
+}
+
+footer {
+  width: 100%;
+  color: #333333;
+  background: #bbb;
+  margin: 0 auto !important;
+
+  &.row {
+    width: 100%;
+    padding: 40px 4.5em;
+    margin: 0 auto !important;
+  }
+
+  div {
+    width: 100%;
+    margin: 0 auto;
+
+    .ftAddress,
+    .ftLinks {
+      display: inline-block;
+      text-align: left;
+      margin: 0 -5px 0 0;
+      vertical-align: middle;
+    }
+
+    .ftAddress {
+      text-align: left;
+
+      p {
+        font-size: 12px;
+        font-size: 0.75em;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.3px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          font-size: 10px;
+          font-size: 0.625em;
+          line-height: 1.4;
+          font-family: $fontStack;
+        }
+      }
+    }
+
+    .ftLinks {
+      text-align: right;
+
+      ul {
+        list-style: none;
+
+        li {
+          display: inline-block;
+          margin: 10px 30px;
+          font-size: 12px;
+          font-size: 0.75em;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          img {
+            height: 20px;
+          }
+
+          i {
+            color: #7f7f7f;
+          }
+        }
+      }
+    }
+  }
+}

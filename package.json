@@ -1,0 +1,51 @@
+{
+  "name": "baseLayout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build:cleanfolder && gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "curly": [
+        "warn",
+        "multi-line"
+      ],
+      "camelcase": 1,
+      "no-empty": 2,
+      "no-obj-calls": 2,
+      "no-unused-vars": 1
+    }
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.5.0",
+    "gulp-uglify": "^2.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhargavgandhi/baseLayout.git"
+  },
+  "keywords": [
+    "1500k",
+    "website"
+  ],
+  "author": "Bhargav Gandhi",
+  "license": "ISC",
+  "homepage": "https://github.com/bhargavgandhi/baseLayout/blob/master/README.md"
+}

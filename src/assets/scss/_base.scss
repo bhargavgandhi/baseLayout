@@ -1,0 +1,258 @@
+/* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: _base.scss
+     =========================== */
+@charset "utf-8";
+
+/* Style Guide */
+$fontStack: sans-serif;
+$MaisonNeueDemi: sans-serif;
+$MaisonNeueMedium: sans-serif;
+$MaisonNeueLight: sans-serif;
+$LinotypeBold: sans-serif;
+$Linotype: sans-serif;
+
+$ManifoldCF-Bold: sans-serif;
+
+$buttonColor: transparent;
+$buttonBorderColor: transparent;
+/* $bgColorHome: #F9F6F4;*/
+$bgColorHome: #f1f1f1;
+$bgColor2: #f1f1f1;
+$fontColor: #333333;
+$fontColor2: #333333;
+$p-font-size-mobile: 15px;
+$p-font-size-small: 16px;
+$p-font-size-medium: 17px;
+$p-font-size-large: 19px;
+$h1-font-size-mobile: 28px;
+$h1-font-size-small: 31px;
+$h1-font-size-medium: 33px;
+$h1-font-size-large: 36px;
+$p-font-sizes: ( null : 15px, small : 16px, medium: 17px, 900px : 18px, large : 19px, 1440px: 20px, );
+$font12px: 12px;
+$font12em: 0.75em;
+$font14px: 14px;
+$font14em: 0.875em;
+$font16px: 16px;
+$font16em: 1em;
+$font18px: 18px;
+$font18em: 1.125em;
+$font20px: 20px;
+$font20em: 1.25em;
+$font24px: 24px;
+$font24em: 1.5em;
+$font24px: 24px;
+$font24em: 1.5em;
+@mixin transEase($sec) {
+  -webkit-transition: all $sec ease-in-out;
+  -moz-transition: all $sec ease-in-out;
+  -o-transition: all $sec ease-in-out;
+  -ms-transition: all $sec ease-in-out;
+  transition: all $sec ease-in-out;
+}
+/* how about we level the playing field - time to reset! */
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+big,
+blockquote,
+body,
+button,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+section,
+small,
+span,
+strike,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+ul,
+var {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: $fontStack;
+  vertical-align: baseline;
+  line-height: 1;
+  /* -webkit-font-smoothing: antialiased;*/
+  -webkit-font-smoothing: antialiased;
+}
+/* html5 elements */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: $fontColor !important;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: $fontStack !important;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  background-color: $bgColorHome !important;
+  color: $fontColor !important;
+  overflow: hidden;
+  font-family: $fontStack;
+  //max-width: 2000px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: $fontColor;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+p {
+  margin-top: 10px;
+}
+/* image styles */
+img {}
+/*margin styles */
+.marginRight {
+  margin: 0;
+}
+
+.marginCenter {
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 !important;
+  width: 100%;
+  padding: 40px;
+}
+
+.fullWidth {
+  margin: 0 !important;
+  width: 100%;
+}
+
+.container {
+  padding: 0 !important;
+  background-color: transparent;
+  background: transparent;
+  width: 100%;
+  max-width: 1500px !important;
+}
+
+.fullContainer{
+  padding: 0 !important;
+  background-color: transparent;
+  background: transparent;
+  width: 100%;
+  max-width: none !important;
+}
+
+div#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #333 url('../images/loading.gif') no-repeat center center;
+}
+
+.Show {
+  opacity: 1 !important;
+}
+
+.Hide {
+  opacity: 0 !important;
+}
+
+::selection {
+  background: #888;
+  color: #fff;
+  text-shadow: none;
+}

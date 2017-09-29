@@ -1,0 +1,168 @@
+/* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: _baseClasses.scss
+     =========================== */
+/*.rowMarginTop{
+    margin-top:9.7% !important;
+  }
+  .rowMarginTopP1{
+    margin-top:9.25% !important;
+  }
+  .rowMarginTopP2{
+    margin-top:7.5% !important;
+  }
+  */
+.rowMarginTopMain {
+  margin-top: 100px !important;
+  margin-top: 6.5em !important;
+}
+.rowMarginTopHalf {
+  margin-top: 50px !important;
+  margin-top: 3.5em !important;
+}
+
+.rowMarginTop5 {
+  margin-top: 5% !important;
+}
+
+.rowMarginTop3 {
+  margin-top: 3% !important;
+}
+
+.rowMarginTop {
+  margin-top: 9% !important;
+}
+
+.rowMarginTopP1 {
+  margin-top: 7% !important;
+}
+
+.rowMarginTopP2 {
+  margin-top: 7% !important;
+}
+
+.rowMarginTop4 {
+  margin-top: 4% !important;
+}
+
+.rowMarginTop8 {
+  margin-top: 74px !important;
+}
+
+.rowMarginTiny {
+  margin-top: 20px !important;
+}
+
+.rowMarginTopDouble {
+  margin-top: 16% !important;
+}
+
+.rowMarginTopLogo {
+  margin-top: 90px !important;
+}
+
+.rowMarginTop130 {
+  margin-top: 130px !important;
+}
+
+.rowMarginTop35 {
+  margin-top: 35px !important;
+}
+
+.marginTopNone {
+  margin-top: 0 !important;
+}
+
+.marginRight5 {
+  margin-right: 5%;
+}
+
+.marginLeftMin {
+  margin-left: 10px;
+}
+.marginLeftMed {
+  margin-left: 30px;
+}
+
+.paddingNone {
+  padding: 0 !important;
+}
+.sidesPaddingNone {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.clearfx {
+  clear: both;
+}
+/* Floats */
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right !important;
+}
+
+.floatRight2 {
+  float: right !important;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.textAlignLeft {
+  text-align: left;
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.borderLeft {
+  border-left: 1px solid #cac6cd;
+}
+
+.borderRight {
+  border-right: 1px solid #cac6cd;
+}
+
+.borderTop {
+  border-top: 1px solid #cac6cd;
+}
+
+.borderBottom {
+  border-bottom: 1px solid #cac6cd;
+}
+
+.borderAll {
+  border: 1px solid #cac6cd;
+}
+
+article.block1 {
+  display: block !important;
+  margin: 0 auto;
+}
+
+.marginLess {
+  margin-right: -15px !important;
+}
+
+.marginLess5 {
+  margin-right: -5px !important;
+}
+
+.block0 {
+  display: block !important;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.fontBold {
+  font-family: $fontStack !important;
+}

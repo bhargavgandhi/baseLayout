@@ -1,0 +1,228 @@
+/* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: _headerNav.scss
+     =========================== */
+header {
+  margin-bottom: 60px;
+}
+
+header.row {
+  z-index: 999999;
+  min-height: 50px;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
+
+#mainNav .navbar-brand > img,
+#nav-icon3 .pageTitle,
+#nav-icon3 img {
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+header.fixedHead {
+  background: #fff;
+  padding: 10px 35px !important;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  backface-visibility: hidden;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -webkit-box-shadow: 0 2px 6px -1px rgba(158,158,158,0.84);
+  -moz-box-shadow: 0 2px 6px -1px rgba(158,158,158,0.84);
+  box-shadow: 0 2px 6px -1px rgba(158,158,158,0.84);
+
+  #nav-icon3 {
+    margin: 1px auto;
+
+    img {
+      width: 30px;
+      width: 1.75em;
+    }
+    img.Sym{
+      width: 44px;
+      width: 2.2em;
+      margin-right:10px;
+    }
+
+    .pageTitle {
+      font-size: 11px;
+      font-size: 0.7em;
+    }
+  }
+
+
+}
+
+header.fixedHead ~ .container{
+  margin-top:100px;
+}
+
+.nav-up {
+  top: -60px !important;
+  background: #c89a64 !important;
+  background: linear-gradient(75deg, #e0b16e, #996c4e) !important;
+  box-shadow: 0 0 0 0 transparent !important;
+  -webkit-box-shadow: 0 0 0 0 transparent !important;
+  -moz-box-shadow: 0 0 0 0 transparent !important;
+
+  #nav-icon3,
+  .navbar .navbar-nav,
+  .navbar-brand {
+    visibility: hidden;
+  }
+}
+
+.nav-down {
+  top: 0 !important;
+
+  #nav-icon3,
+  .navbar .navbar-nav,
+  .navbar-brand {
+    visibility: visible;
+  }
+}
+
+header.fixedHead.shadow {
+  -webkit-box-shadow: 0 2px 6px -1px rgba(158,158,158,0.84);
+  -moz-box-shadow: 0 2px 6px -1px rgba(158,158,158,0.84);
+  box-shadow: 0 2px 6px -1px rgba(158,158,158,0.84);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+header {
+  &.navOpenMain {
+    background: #fff !important;
+  }
+
+  &.navOpen {
+    position: absolute;
+    z-index: 999999;
+    background: #fff;
+
+    .mainMenu {
+      padding: 0;
+      margin: 13.5em auto 0 !important;
+    }
+  }
+
+  .mainMenu {
+    padding: 0;
+    margin: 11.5em auto 0 !important;
+
+    a {
+      margin: 3em;
+      text-decoration: none;
+
+      &:active,
+      &:focus,
+      &:hover,
+      &:visited {
+        text-decoration: none;
+      }
+
+      figure {
+        text-align: center;
+
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  .mainMenu.homepage {
+    margin: 0 auto !important;
+  }
+
+  div#nav-icon3.open {
+    // right: 50px;
+    // right: 3.25em;
+    // left: inherit;
+    // width: 70px;
+    // width: 4.4em;
+  }
+
+  div#nav-icon3.open h1,
+  div#nav-icon3.open img.pageLogo {
+    display: none;
+  }
+
+  div#nav-icon3.open img.closeBtn {
+    display: block;
+    float: right;
+    width: 2.6em;
+  }
+
+  div#nav-icon3.open span.closeX {
+    color: #fff;
+    font-size: 24px;
+    font-size: 1.5em;
+    position: absolute;
+    text-align: center;
+    left: 40%;
+    left: 1.2em;
+    margin: 0 auto;
+    font-family: $fontStack;
+    display: block;
+  }
+
+  // div#nav-icon3 ~ a.navbar-brand,
+  // div#nav-icon3.open img.closeBtn,
+  // div#nav-icon3.open span.closeX {
+  //   display: block;
+  // }
+  //
+  // div#nav-icon3 img.closeBtn,
+  // div#nav-icon3 span.closeX,
+  // div#nav-icon3.open ~ a.navbar-brand {
+  //   display: none;
+  // }
+}
+/*logo address*/
+h2.mainAdd {
+  font-size: 13px;
+  font-size: 0.8em;
+  color: #554b64;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-family: $fontStack;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  left: 0;
+  text-transform: capitalize;
+}
+
+.topLinks {
+  position: absolute;
+  right: 0;
+
+  .nav {
+    margin: 0;
+  }
+
+  .navbar-nav > li > a {
+    font-size: 13px !important;
+    font-size: 0.8em !important;
+    color: #554b64 !important;
+    letter-spacing: 2px !important;
+    word-spacing: 2px !important;
+    font-family: $fontStack !important;
+    -webkit-font-smoothing: antialiased;
+    text-transform: capitalize;
+  }
+
+  .navbar-nav > li.Last > a {
+    padding-right: 0;
+  }
+}

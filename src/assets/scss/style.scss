@@ -1,0 +1,40 @@
+  /* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: style.scss
+     =========================== */
+
+
+// Reset and dependencies
+@import "normalize";
+@import "print";
+
+//Bootstrap
+@import "bootstrap";
+
+//Bootstrap Overide
+@import "bootOveride";
+
+//Animate
+@import "animate";
+
+//FontAwesome
+@import "fontAwesome";
+
+//Base
+@import "base";
+@import "baseClasses";
+
+//Header and Navbar
+@import "headerNav";
+
+//Main Style
+@import "main";
+
+//Media Styles
+@import "mediaMobile";
+@import "mediaTablet";
+@import "mediaDesktop";
+
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
